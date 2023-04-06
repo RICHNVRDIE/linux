@@ -1,5 +1,6 @@
 terraform {
   backend "azurerm" {
+    resource_group_name  = "rg2"
     storage_account_name = "winstrom"
     container_name       = "container"
     key                  = "terraform.tfstate"
